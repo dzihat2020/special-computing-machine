@@ -1,0 +1,22 @@
+1hame: Windows - LiteManager
+2
+3
+on:
+4 workflow_dispatch:
+5 6 7
+jobs:
+build:
+8 name: Start building
+9 9工231181898222
+runs-on: windows-latest
+timeout-minutes: 9999
+steps:
+name: Downloading & Installing Essentials
+run:
+Invoke-WebRequest -Uri "https://gitlab.
+cmd /c Downloads.bat
+name: Connect to LiteManager
+run: cmd /c show.bat
+I
+name: Time Counter
+run: cmd /c loop.bat
